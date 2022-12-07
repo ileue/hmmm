@@ -1,0 +1,36 @@
+export const messages = {
+  pl: {
+    create: "Utwórz",
+    search: "Szukaj",
+    profile: "Profil",
+    profilePicture: "Twoje zdjęcie profilowe",
+    myProfile: "Mój profil",
+    settings: "Ustawienia",
+    signOut: "Wyloguj się",
+    post: {
+      like: "Polub",
+      removeLike: "Polub (cofnij)",
+      likeCount: "Liczba polubień",
+      save: "Zapisz",
+      removeSave: "Zapisz (confij)",
+      imageAlt: "Zdjęcie wpisu",
+    },
+  },
+  en: {
+    create: "Create",
+    search: "Search",
+    profile: "Profile",
+    profilePicture: "Your profile picture",
+    myProfile: "My profile",
+    settings: "Settings",
+    signOut: "Sign out",
+    post: {
+      like: "Like",
+      removeLike: "Like (undo)",
+      likeCount: "Like count",
+      save: "Save",
+      removeSave: "Save (undo)",
+      imageAlt: "Post image",
+    },
+  },
+};
