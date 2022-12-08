@@ -6,14 +6,9 @@ defineProps<{
 </script>
 
 <template>
-  <div :class="primary ? 'text-lg' : 'text-sm'">
+  <div :class="primary ? 'text-lg' : 'text-base'">
     <template v-for="chunk in bodyParser(text)">
-      <LocaleLink v-if="chunk.to?.startsWith('#')" :to="chunk.to">
-        {{ chunk.string }}
-      </LocaleLink>
-      <NuxtLink v-else-if="chunk.to" :to="chunk.to">
-        {{ chunk.string }}
-      </NuxtLink>
+      <PostBodyLink v-if="chunk.to" :to="chunk.to" :text="chunk.string" />
       <span v-else>
         {{ chunk.string }}
       </span>

@@ -4,9 +4,6 @@ useHead({
     class: "bg-neutral-100 dark:bg-black text-black dark:text-white",
   },
 });
-
-const createPostDialog = useCreatePostDialog();
-const searchDialog = useSearchDialog();
 </script>
 
 <template>

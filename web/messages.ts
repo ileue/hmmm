@@ -1,21 +1,4 @@
 export const messages = {
-  pl: {
-    create: "Utwórz",
-    search: "Szukaj",
-    profile: "Profil",
-    profilePicture: "Twoje zdjęcie profilowe",
-    myProfile: "Mój profil",
-    settings: "Ustawienia",
-    signOut: "Wyloguj się",
-    post: {
-      like: "Polub",
-      removeLike: "Polub (cofnij)",
-      likeCount: "Liczba polubień",
-      save: "Zapisz",
-      removeSave: "Zapisz (confij)",
-      imageAlt: "Zdjęcie wpisu",
-    },
-  },
   en: {
     create: "Create",
     search: "Search",
@@ -24,6 +7,9 @@ export const messages = {
     myProfile: "My profile",
     settings: "Settings",
     signOut: "Sign out",
+    404: "Page not found.",
+    goToHome: "Go to a home page",
+    close: "Close",
     post: {
       like: "Like",
       removeLike: "Like (undo)",
@@ -31,6 +17,50 @@ export const messages = {
       save: "Save",
       removeSave: "Save (undo)",
       imageAlt: "Post image",
+      reply: "Reply",
+      create: "Create a new post.",
+    },
+    link: {
+      home: "Home",
+      saved: "Saved",
+    },
+    form: {
+      error: {
+        empty: "This field is empty!",
+        maxChars: "This field can't have more than {limit} charaters!",
+      },
+    },
+  },
+  pl: {
+    create: "Utwórz",
+    search: "Szukaj",
+    profile: "Profil",
+    profilePicture: "Twoje zdjęcie profilowe",
+    myProfile: "Mój profil",
+    settings: "Ustawienia",
+    signOut: "Wyloguj się",
+    404: "Nie znaleziono strony.",
+    goToHome: "Przejdź do strony głównej",
+    close: "Zamknij",
+    post: {
+      like: "Polub",
+      removeLike: "Polub (cofnij)",
+      likeCount: "Liczba polubień",
+      save: "Zapisz",
+      removeSave: "Zapisz (confij)",
+      imageAlt: "Zdjęcie wpisu",
+      reply: "Odpowiedz",
+      create: "Utwórz nowy wpis.",
+    },
+    link: {
+      home: "Strona główna",
+      saved: "Zapisane",
+    },
+    form: {
+      error: {
+        empty: "Pole jest puste!",
+        maxChars: "To pole nie może mieć więcej niż {limit} znaków.",
+      },
     },
   },
 };
