@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <div :class="primary ? 'text-lg' : 'text-base'">
     <template v-for="chunk in bodyParser(text)">
-      <PostBodyLink v-if="chunk.to" :to="chunk.to" :text="chunk.string" />
+      <PostLink v-if="chunk.to" :to="chunk.to" :text="chunk.string" />
       <span v-else>
         {{ chunk.string }}
       </span>

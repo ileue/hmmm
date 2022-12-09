@@ -12,6 +12,8 @@ export const messages = {
     close: "Close",
     post: {
       like: "Like",
+      profileInfo: "Post author information",
+      profilePictureAlt: "Post author profile picture",
       removeLike: "Like (undo)",
       likeCount: "Like count",
       save: "Save",
@@ -44,6 +46,8 @@ export const messages = {
     close: "Zamknij",
     post: {
       like: "Polub",
+      profileInfo: "Informacje o autorze wpisu",
+      profileImageAlt: "Zdjęcie profilowe autora wpisu",
       removeLike: "Polub (cofnij)",
       likeCount: "Liczba polubień",
       save: "Zapisz",
