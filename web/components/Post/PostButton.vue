@@ -15,10 +15,10 @@ defineProps<{
 
 <template>
   <button
-    class="p-2.5 flex items-center justify-center focus-visible:outline-none relative focus-visible:shadow-md hover:shadow-md transition rounded-2xl group"
+    class="p-2.5 flex items-center justify-center focus-visible:outline-none relative focus-visible:shadow-md hover:shadow-md transition rounded-2xl group grow"
   >
     <span><slot /></span>
     <span v-if="number" class="px-2">{{ formatter.format(number) }}</span>
-    <IconButtonTooltip>{{ tooltip }}</IconButtonTooltip>
+    <IconButtonTooltip class="w-min">{{ tooltip }}</IconButtonTooltip>
   </button>
 </template>

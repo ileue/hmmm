@@ -1,5 +1,5 @@
 <template>
-  <div class="w-11 h-11 relative rounded-full overflow-hidden">
+  <div class="w-11 h-11 relative rounded-full overflow-hidden shrink-0">
     <img
       src="//picsum.photos/44/44"
       :alt="$t('post.profilePictureAlt')"

@@ -5,10 +5,14 @@ const saved = ref(false);
 
 <template>
   <article class="bg-white dark:bg-neutral-900 rounded shadow">
-    <div class="p-3 flex flex-col gap-3 break-words">
+    <div class="p-3 flex flex-col gap-2 break-words">
       <div class="flex gap-3 items-center">
         <PostProfilePicture />
-        <PostProfileInfo name="Marian Kowalski" handle="yyyy" />
+        <PostInfo
+          name="Marian Kowalski"
+          handle="yyyy"
+          :timestamp="new Date()"
+        />
       </div>
       <PostImageWrapper>
         <PostImage />

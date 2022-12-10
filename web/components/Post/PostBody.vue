@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <div :class="primary ? 'text-lg' : 'text-base'">
+  <div :class="primary && 'text-lg'">
     <template v-for="chunk in bodyParser(text)">
       <PostLink v-if="chunk.to" :to="chunk.to" :text="chunk.string" />
       <span v-else>

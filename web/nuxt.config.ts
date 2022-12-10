@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "nuxt-headlessui",
   ],
+  css: ["@/assets/styles.css"],
   i18n: {
     strategy: "no_prefix",
     locales: [

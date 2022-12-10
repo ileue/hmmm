@@ -13,7 +13,7 @@ useHead({
       <LazySearchDialog />
     </ClientOnly>
     <HeaderElement />
-    <div class="flex justify-center p-4 gap-4">
+    <div class="flex justify-center p-2 gap-2">
       <slot />
     </div>
   </div>
