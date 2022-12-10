@@ -1,5 +1,3 @@
-import { messages } from "./messages";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -46,10 +44,12 @@ export default defineNuxtConfig({
             profilePictureAlt: "Post author profile picture",
             removeLike: "Like (undo)",
             likeCount: "Like count",
+            replyCount: "Reply count",
             save: "Save",
             removeSave: "Save (undo)",
             imageAlt: "Post image",
             reply: "Reply",
+            replies: "Replies",
             create: "Create a new post.",
           },
           link: {
@@ -81,10 +81,12 @@ export default defineNuxtConfig({
             profilePictureAlt: "Zdjęcie profilowe autora wpisu",
             removeLike: "Polub (cofnij)",
             likeCount: "Liczba polubień",
+            replyCount: "Liczba odpowiedzi",
             save: "Zapisz",
             removeSave: "Zapisz (confij)",
             imageAlt: "Zdjęcie wpisu",
             reply: "Odpowiedz",
+            replies: "Odpowiedzi",
             create: "Utwórz nowy wpis.",
           },
           link: {

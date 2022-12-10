@@ -1,10 +1,15 @@
+<script setup lang="ts">
+defineProps<{
+  src: string;
+}>();
+</script>
+
 <template>
-  <div class="absolute inset-0 overflow-hidden">
+  <div class="absolute inset-0">
     <img
-      src="//picsum.photos/1600/1000"
+      :src="src"
       :alt="$t('post.imageAlt')"
-      class="w-full h-full object-contain object-center"
-      loading="lazy"
+      class="w-full h-full object-contain object-center rounded"
     />
   </div>
 </template>

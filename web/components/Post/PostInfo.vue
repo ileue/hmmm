@@ -18,12 +18,12 @@ defineProps<{
 <template>
   <div :aria-label="$t('post.profileInfo')" class="text-sm">
     <div>{{ name }}</div>
-    <div class="flex gap-2 flex-wrap">
+    <div class="flex flex-wrap gap-1">
       <PostLink :to="`/profile/${handle}`" :text="`@${handle}`" />
-      <span>&bull;</span>
-      <NuxtLink to="/" active-class=" " exact-active-class=" ">
+      <span> &bull; </span>
+      <span>
         {{ formatter.format(timestamp.getTime()) }}
-      </NuxtLink>
+      </span>
     </div>
   </div>
 </template>
