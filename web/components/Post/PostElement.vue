@@ -14,18 +14,14 @@ const saved = ref(false);
         <PostImage />
       </PostImageWrapper>
       <PostBody text="hejka #elo% https://google.com" :primary="false" />
-      <div class="flex flex-wrap gap-2 justify-between">
-        <div class="flex gap-1">
-          <PostSaveButton @click="saved = !saved" :saved="saved" />
-          <PostLikeButton
-            @click="liked = !liked"
-            :liked="liked"
-            :like-count="liked ? 1000 : 999"
-          />
-        </div>
-        <div>
-          <PostReplyButton />
-        </div>
+      <div class="flex flex-wrap gap-1">
+        <PostSaveButton @click="saved = !saved" :saved="saved" />
+        <PostLikeButton
+          @click="liked = !liked"
+          :liked="liked"
+          :like-count="liked ? 1000 : 999"
+        />
+        <PostReplyButton :reply-count="999" />
       </div>
     </div>
   </article>

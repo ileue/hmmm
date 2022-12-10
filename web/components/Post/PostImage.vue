@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute inset-0 rounded overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden">
     <img
       src="//picsum.photos/1600/1000"
       :alt="$t('post.imageAlt')"

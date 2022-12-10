@@ -5,8 +5,11 @@ defineProps<{
 </script>
 
 <template>
-  <IconButton :tooltip="saved ? $t('post.removeSave') : $t('post.save')">
-    <IconSolidBookmark v-if="saved" class="text-sky-500" />
+  <PostButton
+    :tooltip="saved ? $t('post.removeSave') : $t('post.save')"
+    class="text-green-700 dark:text-green-500 bg-green-600/10 hover:bg-green-600/20 focus-visible:bg-green-600/20"
+  >
+    <IconSolidBookmark v-if="saved" />
     <IconOutlinedBookmark v-else />
-  </IconButton>
+  </PostButton>
 </template>

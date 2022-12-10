@@ -1,12 +1,4 @@
 <script setup lang="ts">
-const i18n = useI18n();
-
-const formatter = computed(() =>
-  Intl.NumberFormat(i18n.locale.value, {
-    notation: "compact",
-  })
-);
-
 defineProps<{
   liked: boolean;
   likeCount: number;
@@ -14,18 +6,12 @@ defineProps<{
 </script>
 
 <template>
-  <button
-    class="relative p-2.5 flex bg-neutral-200 dark:bg-neutral-800 items-center rounded-full group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
+  <PostButton
+    :tooltip="$t('post.like')"
+    :number="likeCount"
+    class="text-pink-600 bg-pink-600/10 hover:bg-pink-600/20 focus-visible:bg-pink-600/20"
   >
-    <span>
-      <IconSolidHeart v-if="liked" class="text-pink-500" />
-      <IconOutlinedHeart v-else />
-    </span>
-    <span :aria-label="$t('post.likeCount')" class="text-sm px-2">
-      {{ formatter.format(likeCount) }}
-    </span>
-    <IconButtonTooltip>
-      {{ liked ? $t("post.removeLike") : $t("post.like") }}
-    </IconButtonTooltip>
-  </button>
+    <IconSolidHeart v-if="liked" />
+    <IconOutlinedHeart v-else />
+  </PostButton>
 </template>
