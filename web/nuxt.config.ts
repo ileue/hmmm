@@ -48,9 +48,14 @@ export default defineNuxtConfig({
             save: "Save",
             removeSave: "Save (undo)",
             imageAlt: "Post image",
+            imageControls: "Image slider controls",
             reply: "Reply",
             replies: "Replies",
             create: "Create a new post.",
+          },
+          slider: {
+            prev: "Previous image",
+            next: "Next image",
           },
           link: {
             home: "Home",
@@ -85,9 +90,14 @@ export default defineNuxtConfig({
             save: "Zapisz",
             removeSave: "Zapisz (confij)",
             imageAlt: "Zdjęcie wpisu",
+            imageControls: "Przyciski przewijaka zdjęć",
             reply: "Odpowiedz",
             replies: "Odpowiedzi",
             create: "Utwórz nowy wpis.",
+          },
+          slider: {
+            prev: "Poprzednie zdjęcie",
+            next: "Następne zdjęcie",
           },
           link: {
             home: "Strona główna",

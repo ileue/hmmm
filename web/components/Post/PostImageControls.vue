@@ -8,13 +8,13 @@ const emit = defineEmits(["clickLeft", "clickRight"]);
 
 <template>
   <div
-    class="absolute inset-0 flex p-1 items-center justify-between z-[2]"
-    :aria-label="$t('post.image.controls')"
+    class="absolute inset-0 flex p-1 items-center justify-between z-[2] pointer-events-none"
+    :aria-label="$t('post.imageControls')"
   >
     <div>
       <button
         v-if="showLeft"
-        class="p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-full bg-neutral-700/30 text-white"
+        class="p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-full bg-neutral-700/30 text-white pointer-events-auto"
         :aria-label="$t('slider.prev')"
         @click="emit('clickLeft')"
       >
@@ -24,7 +24,7 @@ const emit = defineEmits(["clickLeft", "clickRight"]);
     <div>
       <button
         v-if="showRight"
-        class="p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-full bg-neutral-700/30 text-white"
+        class="p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-full bg-neutral-700/30 text-white pointer-events-auto"
         :aria-label="$t('slider.next')"
         @click="emit('clickRight')"
       >
